@@ -1,0 +1,292 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Common styles for body, header, and navigation menu */
+body, header, nav {
+    background-color: #f8f5f1; /* Light beige background */
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray text color */
+}
+
+/* Header styles */
+header {
+    background-color: #f15a29;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/* Navigation menu styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #f15a29;
+    padding: 10px 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #e04824; /* Hover color change */
+}
+/* Intro section styles */
+.intro {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 0;
+    text-align: left;
+}
+
+.intro-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.intro-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666; /* Gray text color */
+}
+
+.get-started-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c; /* Red button background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+    background-color: #c0392b; /* Hover background color change (darker red) */
+}
+
+/* Key Features section styles */
+.features {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.features-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.features-list {
+    list-style: armenian;
+    text-align: left;
+    padding: 10px;
+}
+
+.features-list-item {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555; /* Gray text color */
+}
+
+/* About Us section styles */
+.about {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 40px 0;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+.about-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555; /* Gray text color */
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c; /* Red button background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #c0392b; /* Hover background color change (darker red) */
+}
+
+/* Common styles for content */
+.content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.content h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Form and button styles */
+.form-container, .recipe-item {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"], .delete-button {
+    background-color: #f15a29;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover, .delete-button:hover {
+    background-color: #e04824;
+}
+
+/* Delete button specific styles */
+.delete-button {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Recipe grid styles */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum 300px width for each column */
+    gap: 20px; /* Spacing between grid items */
+}
+
+/* Recipe card styles within the grid */
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    transition: box-shadow 0.3s; /* Smooth box shadow transition on hover */
+}
+
+.recipe-card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.recipe-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Text color for the recipe name */
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recipe-card p {
+    margin-bottom: 10px;
+    color: #555; /* Text color for other details */
+}
+
+.recipe-card ul,
+.recipe-card ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    list-style: circle;
+    color: #555; /* Text color for lists */
+}
+
+.recipe-card ul li,
+.recipe-card ol li {
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+}
+
+/* Category section styles */
+.categories {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 10px;
+}
+
+/* Category link styles */
+.category {
+    padding: 5px 10px;
+    background-color: #f15a29;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.category:hover {
+    background-color: #e04824;
+}

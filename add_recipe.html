@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Recipe</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add Recipe</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="add_recipe.html">Add Recipe</a></li>
+            <li><a href="recipe_list.html">Recipe List</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="add-recipe">
+            <div class="form-container">
+    
+            <h2>Add a New Recipe</h2>
+            
+            <form id="recipe-form">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" name="recipeName" required>
+
+                <label for="recipe-img">Image URL:</label>
+                <input type="text" id="recipe-img" name="recipeImage" required>
+
+                <label for="recipe-category">Category:</label>
+                <select id="recipe-category" name="recipeCategory" required>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Dinner">Dinner</option>
+                    <option value="Dessert">Dessert</option>
+                    <!-- Add more categories as needed -->
+                </select>
+
+                <label for="recipe-ingredients">Ingredients:</label>
+                <textarea id="recipe-ingredients" name="recipeIngredients" required></textarea>
+
+                <label for="recipe-instructions">Instructions:</label>
+                <textarea id="recipe-instructions" name="recipeInstructions" required></textarea>
+
+                <button type="submit">Add Recipe</button>
+                <div id="notification" class="notification"></div>
+            </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

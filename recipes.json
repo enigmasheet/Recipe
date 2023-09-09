@@ -1,0 +1,41 @@
+[
+    {
+        "recipeName": "Scrambled Eggs",
+        "recipeImage": "https://th.bing.com/th/id/OIP.zgUWxk5FCrvCMbClSwhQFwHaE7?pid=ImgDet&rs=1",
+        "recipeCategory": "Breakfast",
+        "recipeIngredients": [
+            "2 eggs",
+            "Salt and pepper to taste",
+            "1 tablespoon butter"
+        ],
+        "recipeInstructions": [
+            "1. Crack the eggs into a bowl and beat them.",
+            "2. Heat the butter in a pan over medium heat.",
+            "3. Pour the beaten eggs into the pan.",
+            "4. Stir continuously until the eggs are cooked.",
+            "5. Season with salt and pepper.",
+            "6. Serve hot."
+        ]
+    },
+    {
+        "recipeName": "Spaghetti Bolognese",
+        "recipeImage": "https://th.bing.com/th/id/R.622c65780cf67738d745ddc519f68897?rik=BvLmM8Txora6nw&pid=ImgRaw&r=0",
+        "recipeCategory": "Dinner",
+        "recipeIngredients": [
+            "200g spaghetti",
+            "250g ground beef",
+            "1 onion, chopped",
+            "1 can of tomato sauce",
+            "1 teaspoon Italian seasoning",
+            "Salt and pepper to taste"
+        ],
+        "recipeInstructions": [
+            "1. Cook spaghetti according to package instructions.",
+            "2. In a separate pan, brown the ground beef and onions.",
+            "3. Add the tomato sauce and Italian seasoning to the beef mixture.",
+            "4. Simmer for 10 minutes, stirring occasionally.",
+            "5. Season with salt and pepper.",
+            "6. Serve the sauce over cooked spaghetti."
+        ]
+    }
+]
